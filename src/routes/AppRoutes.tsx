@@ -5,7 +5,18 @@ const Stack = createNativeStackNavigator()
 
 export const AppRoutes = () => {
     return (
-        <Stack.Navigator initialRouteName="home" screenOptions={{headerTitleAlign: 'center', headerStyle: {backgroundColor: '#020069'}, headerTintColor: '#fff', statusBarTranslucent: true}}>
+        <Stack.Navigator 
+            initialRouteName="home" 
+            screenOptions={{
+                headerTitleAlign: 'center', 
+                headerStyle: {backgroundColor: '#020069'}, 
+                headerTintColor: '#fff', 
+                statusBarTranslucent: false,
+                headerShown: false,
+                statusBarStyle: "dark"
+                
+            }}
+        >
             <Stack.Screen 
                 name="home" 
                 component={Screens.Home} 
